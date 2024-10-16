@@ -1,0 +1,63 @@
+
+.header{
+
+}
+.head__top {
+  --container-width: 1330px;
+  /* --container-width: 1330px; в этом месте переопределяем ширину container */
+  padding: 20px 0;
+  background-color: var(--white);
+}
+
+.head__container {
+    display: flex;
+}
+.head_top-container {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head_details {
+  display: flex;
+  align-items: center;
+  gap: 47px;
+
+}
+
+.head__list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.head__link{
+  font-weight: 400;
+  font-size: 16px;
+  color: #726e8d;
+  text-decoration: none;
+}
+
+.head__item {
+}
+
+.head__buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.head__button {
+  display: flex;
+  align-items: center;
+}
+.head__bottom{
+  padding: 20px 0;
+  background: var(--light-grey);
+}
+
+.head_bottom-container {
+  display: flex;
+  justify-content: center;
+}
+
+
