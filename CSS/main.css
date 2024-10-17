@@ -8,6 +8,8 @@
 /* blocks */
 @import url('/CSS/blocks/_btn.css');
 @import url('/CSS/blocks/_header.css');
+@import url('/CSS/blocks/_main.css');
+@import url('/CSS/blocks/_hero.css');
 @import url('/CSS/blocks/_logo.css');
 @import url('/CSS/blocks/_nav.css');
 
