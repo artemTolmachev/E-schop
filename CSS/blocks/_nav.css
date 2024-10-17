@@ -13,4 +13,25 @@
     font-size: 16px;
     color: #726e8d;
     text-decoration: none;
+
+    transition: var(--main-trs);
 }
+
+.nav__link:focus{
+    outline: none;
+  }
+  
+  .nav__link:focus-visible{
+    outline: var(--outline);
+    outline-offset: var(--outline-offset);
+  }
+  
+  @media (any-hover: hover){
+    .nav__link:hover{
+      color: var(--dark-primary)
+    }
+  }
+  
+  .nav__link:active{
+    color: var(--primary)
+  }
