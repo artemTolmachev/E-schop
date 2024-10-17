@@ -1,0 +1,17 @@
+.title{
+    margin: 0;
+    font-family: var(--second-family);
+    color: var(--dark-primary);
+    font-weight: 400;
+}
+.title--small{
+    margin-bottom: 51px;
+    font-size: 24px;
+    line-height: 140%;
+}
+.title--large{
+    font-size: 32px;
+}
+.title--centred{
+    text-align: center;
+}
