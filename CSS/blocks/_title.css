@@ -15,3 +15,9 @@
 .title--centred{
     text-align: center;
 }
+.title--mb-large{
+    margin-bottom: 50px;
+}
+.title--mb-small{
+    margin-bottom: 32px;
+}
