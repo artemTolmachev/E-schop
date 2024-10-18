@@ -1,19 +1,7 @@
 .products {
     padding: 80px 0;
 }
-.container {
-}
-.products__title {
-    
-    
-}
 
-.products__list {
-    
-}
-.products__item {
-    grid-column: 3 span;
-}
 .product {
     display: flex;
     flex-direction: column;
@@ -57,4 +45,11 @@
     font-size: 18px;
     line-height: 150%;
     color: var(--dark-primary);
+}
+
+.products__item {
+    grid-column: 3 span;
+}
+.produkt__item--big{
+    grid-column: 6 span;
 }

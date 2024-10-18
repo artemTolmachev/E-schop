@@ -1,7 +1,7 @@
 /* И для кнопок и для ссылок */
 .btn { 
     padding: 16px 32px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
    
@@ -17,4 +17,9 @@
 .btn--theme-dark{
     background: rgba(249, 249, 249, 0.15);
     color: var(--white);
+}
+
+.btn--theme-light{
+    background: var(--light-grey);
+    color: var(--dark-primary);
 }
