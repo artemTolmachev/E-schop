@@ -3,6 +3,9 @@
 }
 
 .product {
+     /* Растягиваем ссылку по всей карточки position: relative; и для */
+     position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -40,6 +43,12 @@
     /* Возьмет цвет родителя. (ссылка после клика не меняла цвет н фиолетовый) */
     color: inherit;
 }
+.product__link::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+
 .product__price {
     font-weight: 400;
     font-size: 18px;

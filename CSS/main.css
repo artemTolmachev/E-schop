@@ -7,6 +7,8 @@
 
 /* blocks */
 @import url('/CSS/blocks/_btn.css');
+@import url('/CSS/blocks/_social.css');
+@import url('/CSS/blocks/_form.css');
 @import url('/CSS/blocks/_centred.css');
 @import url('/CSS/blocks/_grid.css');
 @import url('/CSS/blocks/_title.css');
@@ -17,4 +19,7 @@
 @import url('/CSS/blocks/_nav.css');
 @import url('/CSS/blocks/_benefits.css');
 @import url('/CSS/blocks/_products.css');
+@import url('/CSS/blocks/_newsletter.css');
+@import url('/CSS/blocks/_about.css');
+@import url('/CSS/blocks/_footer.css');
 

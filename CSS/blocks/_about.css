@@ -1,0 +1,38 @@
+
+.about__content{
+    display: flex;
+}
+.about__btn{
+    margin-top: auto;
+}
+.about__text{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #505977;
+    max-width: 514px;
+}
+.about__title{
+    margin-bottom: 30px;
+    max-width: 514px;
+}
+.about__text:not(:last-of-type){
+    margin-bottom: 30px;
+}
+.about__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 72px;
+    padding-top: 74px;
+    padding-bottom: 54px;
+    padding-right: 50px;
+    /* доходя до 15px var(--container-offset), контейнер не сжимается */
+    padding-left: max(var(--container-offset), (calc((100% - var(--container-width)) / 2)));
+    width: 50%;
+}
+.about__image{
+ display: block;
+ flex-shrink: 0;
+ width: 50%;
+}

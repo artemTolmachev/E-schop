@@ -1,0 +1,35 @@
+.form {
+    display: flex;
+    align-items: center;
+}
+
+
+.form__input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+    font: inherit;
+    color: inherit;
+    appearance: none; /* для сброса специфических стилей в некоторых браузерах */
+    -webkit-appearance: none; /* для Safari */
+    -moz-appearance: none; /* для Firefox */
+
+    padding-left: 32px;
+    padding-right: 20px;
+    width: 354px;
+    height: 56px;
+
+    font-size: 16px;
+    color: var(--dark-primary);
+    background: var(--light-grey);
+}
+.font_input::placeholder{
+    color: rgba(42, 37, 75, 0.2);
+}
+.form__btn {
+    background: var(--dark-primary);
+    color: white;
+}
