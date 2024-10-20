@@ -23,3 +23,7 @@
 @import url('/CSS/blocks/_about.css');
 @import url('/CSS/blocks/_footer.css');
 
+/* ===============  about block ================= */
+@import url('/CSS/blocks/_notice.css');
+@import url('/CSS/blocks/_about-hero.css');
+

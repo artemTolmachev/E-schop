@@ -1,0 +1,31 @@
+.notice {
+    position: relative;
+    padding: 11px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--dark-primary);
+
+}
+.notice__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--white);
+}
+.notice__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+}
+
+.notice--hidden{
+    display: none;
+}
+
+

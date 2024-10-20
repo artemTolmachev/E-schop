@@ -1,0 +1,23 @@
+.about__hero {
+    padding: 88px 0;
+    display: flex;
+}
+
+.about-hero__title {
+    margin: 0;
+    max-width: 704px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 140%;
+    color: var(--dark-primary);
+}
+
+.about-hero__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
