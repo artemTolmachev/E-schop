@@ -1,0 +1,48 @@
+.brend-info {
+    padding: 60px 0;
+}
+
+.brend-info__content {
+    display: flex;
+    gap: 16px;
+}
+
+.brend-info__text{
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    color: var(--white);
+    background: var(--dark-primary);
+}
+
+.brend-info__title {
+   color: var(--white);
+}
+
+.brend-info__desc{
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.brend-info__text{
+    margin: 0;
+}
+
+.brend-info__text, 
+.brand-info__img {
+    width: calc((100% - 16px) / 2);
+}
+
+.brend-info__btn {
+    margin: 0;
+    margin-top: auto;
+}
+
+.brand-info__img-pic{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
