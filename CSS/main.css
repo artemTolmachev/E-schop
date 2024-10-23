@@ -28,3 +28,5 @@
 @import url('/CSS/blocks/_about-hero.css');
 @import url('/CSS/blocks/_brend-info.css');
 
+/* ===============  catalog block ================= */
+@import url('/CSS/blocks/_inner-hero.css');
