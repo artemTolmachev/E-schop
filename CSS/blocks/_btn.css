@@ -21,6 +21,10 @@
     color: var(--white);
 }
 
+.btn--theme-darker{
+    background: var(--dark-primary);
+    color: var(--white);
+}
 .btn--theme-light{
     background: var(--light-grey);
     color: var(--dark-primary);
@@ -28,4 +32,10 @@
 
 .btn--theme-white{
     background-color: var(--white);
+    color: var(--dark-primary)
+}
+
+.product-info__btns{
+    display: flex;
+    gap: 16px;
 }

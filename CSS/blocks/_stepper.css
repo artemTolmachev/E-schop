@@ -1,0 +1,30 @@
+.stepper {
+    display: flex;
+    width: 122px;
+    background-color: var(--white);
+}
+.stepper__btn {
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark-primery);
+}
+
+.stepper__input {
+    width: calc(100% - 84px);
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--dark-primary);
+    font-family: inherit;
+}
+.stepper__btn--disable{
+    color: var(--border-grey);
+    pointer-events: none;
+}
