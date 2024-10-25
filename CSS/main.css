@@ -30,3 +30,6 @@
 
 /* ===============  catalog block ================= */
 @import url('/CSS/blocks/_inner-hero.css');
+@import url('/CSS/blocks/_catalog.css');
+@import url('/CSS/blocks/_filter.css');
+@import url('/CSS/blocks/_custom-checkbox.css');

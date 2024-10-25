@@ -1,0 +1,51 @@
+.custom-checkbox{
+    display: inline-flex;
+    /* чтобы элемент не сильно растягивался и можно было использовать gap*/
+    gap: 12px;
+    align-items: center;
+
+    user-select: none;
+    /* при двойном клике строка не выделяется(не обязательно) */
+
+    cursor: pointer;
+}
+.custom-checkbox__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--dark-primary);
+}
+.custom-checkbox__input{
+    position: absolute;
+    opacity: 0;
+}
+.custom-checkbox__icon{
+    position: relative;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid #dcdcdc;
+    border-radius: 2px;
+}
+
+/* inset: -1px === top: -1; right: -1; bot: -1;  left: -1; 
+(для того чтобы перекрыть border: 1px) растягиваем на всего родителя */
+.custom-checkbox__icon::after{
+    content: '';
+    position: absolute;
+    inset: -1px; 
+    top: 0;
+    left: 0;
+    background-image: url('../../img/checkmark.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+}
+
+/* По клику показываем chekced */
+.custom-checkbox__input:checked + .custom-checkbox__icon::after{
+    opacity: 1;
+}

@@ -1,0 +1,35 @@
+.catalog {
+    padding: 36px 0;
+}
+
+.catalog__content {
+
+}
+
+.catalog__column {
+    grid-column: 3 span;
+}
+.filters {
+
+}
+.catalog__wrapper {
+    grid-column: 9 span;
+}
+.catalog__prodacts {
+    --column-gap: 20px;
+    --elems: 3;
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--column-gap);
+    row-gap: 36px;
+}
+
+
+/* (var(--elems) - 1)  - количество отступов между элементами в строке*/
+/* ((var(--elems) - 1) * var(--column-gap))) - получаем всего пустого пространства в блоке */
+/* 100 % - все пустое пространство и делим на 3 эл = получаем ширину карточки*/
+/* Такой расчет удобен для адаптива */
+.catalog__item{
+    width: calc((100% - ((var(--elems) - 1) * var(--column-gap))) / var(--elems));
+}
