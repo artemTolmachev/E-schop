@@ -22,10 +22,32 @@
     top: 50%;
     right: 16px;
     transform: translateY(-50%);
+    color: var(--white);
+    transition: var(--main-trs);
+}
+.notice__close svg{
+    display: block;
+    fill: currentColor;
 }
 
 .notice--hidden{
     display: none;
 }
 
+.notice__close:focus{
+    outline: none;
+}
+.notice__close:focus-visible{
+    outline: 2px dashed var(--white);
+    outline-offset: var(--outline-offset);
+} 
 
+@media (any-hover: hover){
+    .notice__close:hover{
+      color: var(--primary)
+    }
+}
+
+.notice__close:active{
+    color: var(--border-dark)
+}

@@ -1,14 +1,14 @@
 .logo{
     text-decoration: none;
-
 }
-
+.logo img {
+  display: block;
+}
 .logo:focus{
     outline: none;
-  }
-  
-  .logo:focus-visible{
-    outline: var(--outline);
-    outline-offset: var(--outline-offset);
-  }
+}
+.logo:focus-visible{
+  outline: var(--outline);
+  outline-offset: var(--outline-offset);
+}
   

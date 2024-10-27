@@ -15,22 +15,18 @@
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     column-gap: 7px;
-    background-color: bisque;
 }
 .cart__col{
     grid-column: 6 span;
-    background-color: rgb(138, 114, 160);
 }
 .cart__col--quantity{
     padding-left: 75px;
     grid-column: 2 span;
-    background-color: rgb(160, 102, 102);
 }
 .cart__col--total{
     display: flex;
     justify-content: flex-end;
     grid-column: 2 span;
-    background-color: rgb(156, 172, 110);
 }
 .cart__row:not(:last-child){
     margin-bottom: 32px;
@@ -98,7 +94,6 @@
     line-height: 150%;
     color: var(--dark-primary);
 }
-
 
 .cart__bottom--info {
     margin-bottom: 16px;

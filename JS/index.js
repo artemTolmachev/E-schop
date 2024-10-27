@@ -20,16 +20,16 @@ if(stepperEls){
         let count = Number(stepperInputEl.value);
     
         stepperInputEl.addEventListener('change', () => {
-            stepperBtnMinusEl.classList.remove('stepper__btn--disable');
-            stepperBtnPlusEl.classList.remove('stepper__btn--disable');
+            stepperBtnMinusEl.disabled = false;
+            stepperBtnPlusEl.disabled = false;
     
             if(stepperInputEl.value <= stepperMin){
                 stepperInputEl.value = stepperMin
-                stepperBtnMinusEl.classList.add('stepper__btn--disable');
+                stepperBtnMinusEl.disabled = true;
             }
             if(stepperInputEl.value >= stepperMax){
                 stepperInputEl.value = stepperMax
-                stepperBtnPlusEl.classList.add('stepper__btn--disable');
+                stepperBtnPlusEl.disabled = true;
             }
         })
      
@@ -37,13 +37,13 @@ if(stepperEls){
         stepperBtnPlusEl.addEventListener('click', () => {
             count = Number(stepperInputEl.value);
             if(count < stepperMax){
-                stepperBtnMinusEl.classList.remove('stepper__btn--disable');
-                stepperBtnPlusEl.classList.remove('stepper__btn--disable');
+                stepperBtnMinusEl.disabled = false;
+                stepperBtnPlusEl.disabled = false;
                 count++;
                 stepperInputEl.value = count;
             }
             if(count === stepperMax){
-                stepperBtnPlusEl.classList.add('stepper__btn--disable');
+                stepperBtnPlusEl.disabled = true;
             }
             
         })
@@ -52,13 +52,13 @@ if(stepperEls){
             count = Number(stepperInputEl.value);
             console.log(stepperMin)
             if(count > stepperMin){
-                stepperBtnMinusEl.classList.remove('stepper__btn--disable');
-                stepperBtnPlusEl.classList.remove('stepper__btn--disable');
+                stepperBtnMinusEl.disabled = false;
+                stepperBtnPlusEl.disabled = false;
                 count--;
                 stepperInputEl.value = count;
             }
             if(count === stepperMin){
-                stepperBtnMinusEl.classList.add('stepper__btn--disable');
+                stepperBtnMinusEl.disabled = true;
             }
         })
     })

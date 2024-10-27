@@ -15,26 +15,62 @@
     cursor: pointer;
     transition: var(--main-trs);
 }
-
+/* ====== для .btn--theme-dark 4 состояния ========== */
 .btn--theme-dark{
     background: rgba(249, 249, 249, 0.15);
     color: var(--white);
 }
-
+/* 1. */
+/* убираем обычный фокус (работает с мышкой) */
+.btn:focus{
+    outline: none;
+}
+/* 2. */
+/* эта обводка появляется только при работе с клвтр */
+.btn:focus-visible{
+    outline: 2px dashed var(--primary);
+    outline-offset: var(--outline-offset);
+}
+/* 3. */
+@media (any-hover: hover){
+    .btn--theme-dark:hover{
+        color: var(--dark-primary);
+        background-color: var(--white);
+    }
+}
+/* 4. */
+.btn--theme-dark:active {
+    color: var(--white);
+    background-color: var(--dark-primary);
+}
+/* ====== ========== ======== ============== ========== */
 .btn--theme-darker{
     background: var(--dark-primary);
     color: var(--white);
 }
+/* // ================================ */
 .btn--theme-light{
     background: var(--light-grey);
     color: var(--dark-primary);
+}
+
+@media (any-hover: hover){
+    .btn--theme-light:hover{
+        color: var(--white);
+        background-color: var(--primary);
+    }
+}
+
+.btn--theme-light:active {
+    color: var(--white);
+    background-color: var(--dark-primary);
 }
 
 .btn--theme-white{
     background-color: var(--white);
     color: var(--dark-primary)
 }
-
+/* // ================================ */
 .product-info__btns{
     display: flex;
     gap: 16px;

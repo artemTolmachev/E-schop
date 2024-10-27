@@ -14,6 +14,8 @@
     font-weight: 400;
     font-size: 16px;
     color: var(--dark-primery);
+
+    transition: var(--main-trs);
 }
 .stepper__input {
     width: calc(100% - 84px);
@@ -25,7 +27,35 @@
     background-color: inherit;
     font-family: inherit;
 }
-.stepper__btn--disable{
+.stepper__btn:disabled{
     color: var(--border-grey);
     pointer-events: none;
 }
+
+.stepper__btn:focus{
+    outline: none;
+}
+
+.stepper__btn:focus-visible{
+    outline: 2px dashed var(--primary);
+    outline-offset: var(--outline-offset);
+}
+
+@media (any-hover: hover){
+    .stepper__btn:hover{
+        color: var(--primary);
+    }
+}
+
+.btn--theme-dark:active {
+    color: var(--border-grey);
+}
+
+.stepper__input:focus{
+    outline: none;
+}
+.stepper__input:focus-visible{
+    outline: 2px dashed var(--primary);
+    outline-offset: var(--outline-offset);
+} 
+
