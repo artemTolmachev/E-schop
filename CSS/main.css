@@ -22,17 +22,20 @@
 @import url('/CSS/blocks/_about.css');
 @import url('/CSS/blocks/_footer.css');
 
-/* ===============  about block ================= */
+/* ===============  about  ================= */
 @import url('/CSS/blocks/_notice.css');
 @import url('/CSS/blocks/_about-hero.css');
 @import url('/CSS/blocks/_brend-info.css');
 
-/* ===============  catalog block ================= */
+/* ===============  catalog  ================= */
 @import url('/CSS/blocks/_inner-hero.css');
 @import url('/CSS/blocks/_catalog.css');
 @import url('/CSS/blocks/_filter.css');
 @import url('/CSS/blocks/_custom-checkbox.css');
 
-/* ===============  Product block ================= */
+/* ===============  Product  ================= */
 @import url('/CSS/blocks/_product-info.css');
 @import url('/CSS/blocks/_stepper.css');
+
+/* ===============  Cart  ================= */
+@import url('/CSS/blocks/_cart.css');

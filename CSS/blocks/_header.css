@@ -30,6 +30,7 @@
 }
 
 .head__link{
+  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   color: #726e8d;
