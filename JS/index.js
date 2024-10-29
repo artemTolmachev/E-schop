@@ -1,5 +1,7 @@
 let noticeEl = document.querySelector('.notice');
 let stepperEls = document.querySelectorAll('.stepper');
+let burger = document.querySelector('.burger');
+
 
 if(noticeEl){
     const noticeCloseEl = noticeEl.querySelector('.notice__close')
@@ -61,5 +63,16 @@ if(stepperEls){
                 stepperBtnMinusEl.disabled = true;
             }
         })
+    })
+}
+
+if(burger){
+    const menuEl = document.querySelector('.head__bottom');
+    const body = document.querySelector('body');
+
+    burger.addEventListener('click', () => {
+        menuEl.classList.toggle('head__bottom--active');
+        body.classList.add('stop-scroll');
+        burger.classList.toggle('burger--active')
     })
 }
