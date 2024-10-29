@@ -6,6 +6,7 @@
 
 
 .page__body{
+    min-width: 390px;
     font-family: var(--font-family);
 }
 
@@ -44,9 +45,16 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
-
+о     
 .stop-scroll {
     overflow: hidden;
 }
 
 
+
+/* Общие рекомендации */
+/* для body min-width: 390px (по макету для мобилок) задаем сразу */
+
+
+/* «Transfer Elements» — библиотека, позволяющая вам динамически переносить какие-либо элементы из одного места в другое на брейкпоинтах. */
+/* https://github.com/SineYlo/transfer-elements/blob/main/readme-ru.md#installation */

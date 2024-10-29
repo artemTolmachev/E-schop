@@ -1,7 +1,7 @@
 let noticeEl = document.querySelector('.notice');
 let stepperEls = document.querySelectorAll('.stepper');
 let burger = document.querySelector('.burger');
-
+let headerList = document.querySelector('.head__list');
 
 if(noticeEl){
     const noticeCloseEl = noticeEl.querySelector('.notice__close')
@@ -75,4 +75,18 @@ if(burger){
         body.classList.add('stop-scroll');
         burger.classList.toggle('burger--active')
     })
+}
+// https://github.com/SineYlo/transfer-elements/blob/main/readme-ru.md#installation
+if(headerList){
+    new TransferElements(
+        {
+          sourceElement: headerList,
+          breakpoints: {
+            767.98: {
+                targetElement: document.querySelector('.head__bottom'),
+                targetPosition: 1
+            }
+          }
+        }
+    );
 }
