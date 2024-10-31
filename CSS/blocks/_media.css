@@ -103,7 +103,9 @@
         --gap: 16px;
         --container-offset: 24px;
     }
- 
+    .btn{
+        width: 100%;
+    }
     .hero{
         padding: 0px;
     }
@@ -128,7 +130,7 @@
     .hero__title{
         margin-bottom: 80px;
     }
-    .btn{
+    .hero__link {
         width: 100%;
     }
     .benefits{
@@ -187,8 +189,9 @@
         width: 200px;
         flex-shrink: 0;
     }
-    .prodacts__btn{
-        display: flex;
+    .prodacts__btn {
+        display: block;
+        width: 100%;
     }
 
     .newsletter{
@@ -274,5 +277,65 @@
         padding: 20px 0;
         justify-content: center;
     }
+    /* // ========= about ======================= */
+    .notice__text{
+        width: 294px;
+    }
+    .notice {
+        position: relative;
+        padding: 8px 0;
+    }
+    .about__hero{
+        padding: 32px 0;
+    }
+    .about-hero__title{
+        font-size: 32px;
+    }
+    .brend-info{
+        padding: 32px 0px;
+    }
+    .brend-info__content{
+        gap: 24px;
+        flex-direction: column;
+    }
+    .brend-info__text, .brand-info__img{
+        width: 100%;
+    } 
+    .brend-info__text {
+        padding: 36px;
+        padding-left: 32px;
+        padding-bottom: 30px;
+        min-height: 281px;
+    }
+    .title--large{
+        font-size: 20px;;
+    }
+    .brend-info__desc{
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .title--mb-smal-xs{
+        margin-bottom: 12px;
+    }
 
+    .brand-info__img-pic{
+        height: 259px;
+    }
+
+    .about--reverse .about__content{
+        flex-direction: column-reverse;
+    } 
+    .about--reverse .about__info{
+        padding: 32px 24px;
+        padding-bottom: 62px;
+    }
+    .about__btn{
+        margin-top: 48px;
+    }
+    .benefits--about .benefits__item {
+        padding: 36px 24px;
+        padding-top: 72px;
+        background-position: 24px 36px;
+    }
 }
+

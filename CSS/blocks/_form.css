@@ -31,9 +31,10 @@
 }
 
 .form__btn {
-    background: var(--dark-primary);
-    color: white;
+    /* background: var(--dark-primary);
+    color: white; */
 }
+
 .form__input:focus{
     outline: none;
 }
