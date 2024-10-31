@@ -58,3 +58,7 @@ input::-webkit-inner-spin-button {
 
 /* «Transfer Elements» — библиотека, позволяющая вам динамически переносить какие-либо элементы из одного места в другое на брейкпоинтах. */
 /* https://github.com/SineYlo/transfer-elements/blob/main/readme-ru.md#installation */
+
+/* Смена сетки с grid-template-columns: repeat(12, 1fr); на grid-template-columns: repeat(4, 1fr); для мобильной версии */
+
+/* на мобилках для button width: auto;  */
