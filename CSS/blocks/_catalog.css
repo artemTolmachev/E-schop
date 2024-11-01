@@ -24,7 +24,9 @@
     column-gap: var(--column-gap);
     row-gap: 36px;
 }
-
+.catalog__mobile-btn{
+    display: none;
+}
 
 /* (var(--elems) - 1)  - количество отступов между элементами в строке*/
 /* ((var(--elems) - 1) * var(--column-gap))) - получаем всего пустого пространства в блоке */

@@ -1,7 +1,7 @@
 /* И для кнопок и для ссылок */
 .btn { 
     padding: 16px 32px;
-    display: inline;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
    
@@ -55,10 +55,9 @@
     background-color: var(--light-grey);
 }
 .btn--theme-white{
-    background-color: var(--dark-primary);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--dark-primary);
 }
-
 @media (any-hover: hover){
     .btn--theme-light:hover{
         color: var(--white);
@@ -72,7 +71,21 @@
 }
 
 /* // ================================ */
+
+.btn--with-icon{
+    gap: 12px;
+}
 .product-info__btns{
     display: flex;
     gap: 16px;
 }
+.btn--with-icon svg{
+    fill: currentColor;
+    transition: transform 0.3s ease;
+}
+
+.catalog__mobile-btn--active svg{
+    fill: currentColor;
+    transform: rotate(180deg);
+}
+

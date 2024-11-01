@@ -2,6 +2,8 @@ let noticeEl = document.querySelector('.notice');
 let stepperEls = document.querySelectorAll('.stepper');
 let burger = document.querySelector('.burger');
 let headerList = document.querySelector('.head__list');
+const filtersBtnEl = document.querySelector('.catalog__mobile-btn');
+
 
 if(noticeEl){
     const noticeCloseEl = noticeEl.querySelector('.notice__close')
@@ -89,4 +91,11 @@ if(headerList){
           }
         }
     );
+}
+if(filtersBtnEl){
+    let filtesBlockEL = document.querySelector('.filters');
+    filtersBtnEl.addEventListener('click', () => {
+        filtersBtnEl.classList.toggle('catalog__mobile-btn--active');
+        filtesBlockEL.classList.toggle('filters--active');
+    })
 }

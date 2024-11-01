@@ -1,5 +1,5 @@
 .inner-hero{
-    min-height: 209px;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -7,7 +7,7 @@
     background-image: url(../../img/inner-hero-bgr.png);
 }
 .inner-hero__content{
-    padding: 36px 0;
+    padding-bottom: 36px;
     min-height: 209px;
     display: flex;
     align-items: flex-end;
