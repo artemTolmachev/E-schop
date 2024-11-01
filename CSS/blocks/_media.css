@@ -277,7 +277,7 @@
         padding: 20px 0;
         justify-content: center;
     }
-    /* // ========= about ======================= */
+  
     .notice__text{
         width: 294px;
     }
@@ -429,5 +429,91 @@
         order: -1;
     }
 
+    section{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .cart{
+        display: block;
+    }
+
+    .visually-hidden{
+        position: static !important; /* Убираем absolute позиционирование */
+        clip: auto !important; /* Снимаем обрезку */
+        height: auto !important; /* Восстанавливаем размер */
+        width: auto !important;
+        overflow: visible !important; /* Убираем скрытие содержимого */
+    }
+    .cart__main-title{
+        margin: 0;
+        margin-bottom: 32px;
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        color: var(--dark-primary);
+    }
+    .cart__content{
+        padding: 0;
+        background-color: var(--light-grey)
+    }
+    .cart__row.cart__row--heading{
+        display: none;
+    }
+
+    .cart-grid {
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 10px;
+        grid-template-rows: 105px 55px;
+        row-gap: 14px;
+    }
+    .cart__col--image{
+        grid-column: 5 span;
+    }
+    .cart__image{
+        width: 100%;
+        height: 166px;
+    }
+    .cart__col--info{
+        grid-column: 7 span;
+    }
+    .cart__col--quantity{
+        /* элемент начинается с 6 колонки и занимает 7кол. */
+        grid-column: 6 / 7 span;
+    }
+    .cart__col--total{
+        display: none;
+    }
+    .cart__info {
+        padding: 0;
+        padding-left: 14px;
+    }
+    .cart__titl{
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .cart__stepper{
+        padding: 0;
+        padding-left: 14px;
+    }
+    .stepper--cart{
+        background-color: var(--white);
+    }
+    .cart__table {
+        padding-bottom: 37px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid var(--border-grey);
+    }
+    .cart__row:not(:last-child){
+        margin-bottom: 36px;
+    }
+    .cart__bottom--info{
+        margin-bottom: 36px;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
 }
 

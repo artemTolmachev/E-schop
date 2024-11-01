@@ -8,6 +8,7 @@
     background-color: var(--white);
 }
 .cart__table{
+    padding-bottom: 28px;
     margin-bottom: 20px;
     border-bottom: 1px solid var(--light-grey);
 }
@@ -130,12 +131,7 @@
     display: flex;
     justify-content: flex-end;
 }
-.btn {
-}
-.cart__link {
-}
-.btn--theme-darker {
-}
+
 .cart__subtotal--price{
     font-family: var(--second-family);
     font-weight: 400;
